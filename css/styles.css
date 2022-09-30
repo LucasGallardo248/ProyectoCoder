@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ----------------- index.html --------------------*/
+
+/* Header */
+
+header{
+    background-color: #2e2e2e;
+    color: white;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo__pagina{
+    font-weight: bold;
+    letter-spacing: 20px;
+    padding-left: 90px;
+}
+
+.logo__pagina a{
+    color: white;
+}
+
+
+header ul{ 
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav{
+    width: 50%;
+    font-size: 25px;
+}
+
+ul li a{
+    color: white;
+}
+
+ul li a:hover{
+    color: rgb(129, 129, 129);
+
+}
+
+/* Main */
+
+.portadabott{
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    
+}
+
+.botonesportada{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 100px;
+    position: relative;
+    bottom: 150px;
+
+
+}
+
+.boton__portada{
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 1px 15px;
+    border-radius: 40px;
+    background-color: #2e2e2e;
+    border-color: white;
+    transition: 0.3s;
+
+}
+
+.boton__portada:hover{
+    color:#2e2e2e;
+    background-color: white;
+    border-color: #2e2e2e;
+
+}
+
+.ofertas__titulo{
+    text-align: center;
+    padding: 25px;
+    font-size: 40px;
+    color: #000000;
+}
+
+.preciotach{
+    font-size: 13px;
+}
+
+
+
+.tarjetas{
+    border: 2px solid black;
+    width: 180px;
+    height: 260px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.btn{
+    color: white;
+    border: 3px solid black;
+    background-color: black;
+    border-radius: 40px;
+    padding: 1px 15px;
+}
+
+.btn:hover{
+    border: 3px solid black;
+    background-color: white;
+    color: black;
+}
+
+.slider{
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+}
+
+/* Footer */
+
+footer{
+    background-color: #2e2e2e;
+    color: white;
+    display: flex;
+    padding: 10px;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px;
+
+}
+
+ul li{
+    margin: 0 30px;
+}
+
+/* --------- Productos ------------ */
+
+
+.portada__pag{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    text-shadow: 0.1em 0.1em rgb(83, 97, 100);
+    font-weight: 500;
+    background-color: rgb(83, 136, 149) ;
+    padding: 30px;
+    margin: 0 500px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.cuadro__h-m{
+    border: 2px solid rgb(131, 191, 205);
+    background-color: rgb(131, 191, 205);
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin: 35px 770px;
+}
+
+.prod__tittle{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.productos__catalogo{
+    padding: 10px 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tarjetas__productos{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #999999;
+    width: 250px;
+    height: 400px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* ----------------- CONTACTO ------------- */
+
+.contacto{
+    background-image: url(../assets/Img/contactofondo.jpg);
+    height: 89vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+}
+
+.cuadro__form{
+    font-size: 25px;
+    border: 2px solid rgb(174, 174, 174);
+    background-color: rgb(174, 174, 174);
+    border-radius: 20px;
+    padding: 70px 160px;
+    display: flex;
+    flex-direction: column;
+    margin: 200px 600px; 
+}
+
+/* ----------------- NOSOTROS -------------- */
+
+
+.nosotros__cuadro{
+    border: 4px solid black;
+    background-color: #bdbdbd;
+    border-radius: 10px;
+    padding: 30px;
+    width: 700px;
+    height: 500px;
+    display: flex;
+
+}
+
+.googlemaps{
+    border: 1px solid black;
+    width: 602px;
+    height: 460px;
+}
+
+.contenidonosotros{
+    padding: 92px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* ---------- NIÑOS ----------- */
+
+
+
