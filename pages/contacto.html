@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Proyecto Coder</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <title>Proyecto Coder Lucas Gallardo</title>
 </head>
 
 <body>
-
     <header>
         <h1 class="logo__pagina"><a href="../index.html">UVHAA</a></h1>
         <nav>
-            <ul>
+            <ul class="secciones__paginas">
                 <li><a href="./productos.html">Productos</a></li>
                 <li><a href="./ninos.html">Niños</a></li>
                 <li><a href="./ninas.html">Niñas</a></li>
@@ -22,50 +23,63 @@
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main class="contacto">
-        <div  class="contactocuadro">
-        <section>
-            <article class="cuadro__form">
-                <form action="">
-                    <div>
-                        <label for="">Nombre</label>
-                        <input type="text">
-                    </div>
-                    <div>
-                        <label for="">Email</label>
-                        <input type="email">
-                    </div>
-                    <div>
-                        <label for="">Descripcion</label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </div>
-                </form>
-            </article>
-        </section>
+        <div class="contactocuadro" data-aos="zoom-in">
+            <section>
+                <article class="cuadro__form">
+                    <form action="">
+                        <div class="form__inputs">
+                            <input type="text" placeholder="Nombre">
+                        </div>
+                        <div class="form__inputs">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="form__inputs">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Descripcion"></textarea>
+                        </div>
+                        <a href="" class="botn__contacto">ENVIAR</a>
+                    </form>
+                </article>
+            </section>
         </div>
     </main>
 
 
     <footer>
-        <p>© Copyright Lucas Gallardo</p>
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank"> <img src="../assets/Img/instagramfooter.png" alt=""> </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank"><img src="../assets/Img/facebook.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://www.gmail.com/" target="blank"><img src="../assets/Img/gmail.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com/" target="blank"><img src="../assets/Img/twitter.png" alt=""></a>
-                </li>
-            </ul>
+        <div class="contenido__footer">
+            <div>
+                <p class="copy__footer">© Copyright Lucas Gallardo</p>
+            </div>
+            <div>
+                <ul class="iconos__footer">
+                    <li class="icono__instagram">
+                        <a href="https://www.instagram.com/" target="_blank"> <img
+                                src="../assets/Img/instagramfooter.png" alt=""> </a>
+                    </li>
+                    <li class="icono__facebook">
+                        <a href="https://www.facebook.com/" target="_blank"><img src="../assets/Img/facebook.png"
+                                alt=""></a>
+                    </li>
+                    <li class="icono__gmail">
+                        <a href="https://www.gmail.com/" target="blank"><img src="../assets/Img/gmail.png" alt=""></a>
+                    </li>
+                    <li class="icono__twitter">
+                        <a href="https://www.twitter.com/" target="blank"><img src="../assets/Img/twitter.png"
+                                alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

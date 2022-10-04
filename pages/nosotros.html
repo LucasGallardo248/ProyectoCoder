@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Proyecto Coder</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <title>Proyecto Coder Lucas Gallardo</title>
 </head>
 
 <body>
     <header>
         <h1 class="logo__pagina"><a href="../index.html">UVHAA</a></h1>
         <nav>
-            <ul>
+            <ul class="secciones__paginas">
                 <li><a href="./productos.html">Productos</a></li>
                 <li><a href="./ninos.html">Niños</a></li>
                 <li><a href="./ninas.html">Niñas</a></li>
@@ -21,55 +23,70 @@
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
-        <section class="portadanosotros">
-            <h2 class="portada__pag">SOBRE NOSOTROS</h2>
-        </section>
-        <section class="contenidonosotros">
-            <div class="nosotros__cuadro">
-                <h2 class="nosotros__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia eaque
-                    praesentium, deleniti
-                    odit atque et laboriosam! Iusto culpa nihil id eaque, architecto perspiciatis quod tenetur harum.
-                    Esse, rem nam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia eaque
-                    praesentium, deleniti
-                    odit atque et laboriosam! Iusto culpa nihil id eaque, architecto perspiciatis quod tenetur harum.
-                    Esse, rem nam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia eaque
-                    praesentium, deleniti
-                    odit atque et laboriosam! Iusto culpa nihil id eaque, architecto perspiciatis quod tenetur harum.
-                    Esse, rem nam.
-                </h2>
-            </div>
-            <div class="googlemaps">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d434.422315636167!2d-66.85587471432588!3d-29.4177313212396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427dbccfce09929%3A0x5303fbbd00d63d42!2sUvhaa%20La%20Rioja!5e0!3m2!1sen!2sar!4v1662950008829!5m2!1sen!2sar"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
+        <div>
+            <section class="portadanosotros" data-aos="zoom-in">
+                <h2 class="portada__pag">SOBRE NOSOTROS</h2>
+            </section>
+            <section class="contenidonosotros">
+                <div class="nosotros__cuadro" data-aos="fade-down-right">
+                    <h2 class="nosotros__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia
+                        eaque
+                        praesentium, deleniti
+                        odit atque et laboriosam! Iusto culpa nihil id eaque, architecto perspiciatis quod tenetur
+                        harum.
+                        Esse, rem nam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia eaque
+                        praesentium, deleniti
+                        odit atque et laboriosam! Iusto culpa nihil id eaque, architecto perspiciatis quod tenetur
+                        harum.
+                    </h2>
+                </div>
+                <div class="googlemaps" data-aos="fade-down-left">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d434.422315636167!2d-66.85587471432588!3d-29.4177313212396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427dbccfce09929%3A0x5303fbbd00d63d42!2sUvhaa%20La%20Rioja!5e0!3m2!1sen!2sar!4v1662950008829!5m2!1sen!2sar"
+                        width="600" height="458" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>© Copyright Lucas Gallardo</p>
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank"> <img src="../assets/Img/instagramfooter.png" alt=""> </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank"><img src="../assets/Img/facebook.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://www.gmail.com/" target="blank"><img src="../assets/Img/gmail.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com/" target="blank"><img src="../assets/Img/twitter.png" alt=""></a>
-                </li>
-            </ul>
+        <div class="contenido__footer">
+            <div>
+                <p class="copy__footer">© Copyright Lucas Gallardo</p>
+            </div>
+            <div>
+                <ul class="iconos__footer">
+                    <li class="icono__instagram">
+                        <a href="https://www.instagram.com/" target="_blank"> <img
+                                src="../assets/Img/instagramfooter.png" alt=""> </a>
+                    </li>
+                    <li class="icono__facebook">
+                        <a href="https://www.facebook.com/" target="_blank"><img src="../assets/Img/facebook.png"
+                                alt=""></a>
+                    </li>
+                    <li class="icono__gmail">
+                        <a href="https://www.gmail.com/" target="blank"><img src="../assets/Img/gmail.png" alt=""></a>
+                    </li>
+                    <li class="icono__twitter">
+                        <a href="https://www.twitter.com/" target="blank"><img src="../assets/Img/twitter.png"
+                                alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
 
-
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 

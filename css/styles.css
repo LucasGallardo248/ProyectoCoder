@@ -21,10 +21,12 @@ a{
 header{
     background-color: #2e2e2e;
     color: white;
+    width: 100%;
     display: flex;
-    padding: 20px;
     justify-content: space-between;
     align-items: center;
+    height: 96px;
+    
 
 }
 
@@ -32,6 +34,14 @@ header{
     font-weight: bold;
     letter-spacing: 20px;
     padding-left: 90px;
+    transition: 0.8s;
+
+}
+
+.logo__pagina a:hover{
+    color: rgb(129, 129, 129);
+    font-size: 46px;
+    transition: all 0.5s;
 }
 
 .logo__pagina a{
@@ -42,6 +52,7 @@ header{
 header ul{ 
     display: flex;
     justify-content: space-around;
+
 }
 
 header nav{
@@ -51,14 +62,26 @@ header nav{
 
 ul li a{
     color: white;
+    transition: 0.5s;
+
 }
 
 ul li a:hover{
     color: rgb(129, 129, 129);
+    font-size: 30px;
+
+
 
 }
 
+
+
 /* Main */
+
+main{
+    background-color: rgb(245, 245, 245);
+}
+
 
 .portadabott{
     display: flex;
@@ -73,7 +96,7 @@ ul li a:hover{
     margin: 0 100px;
     position: relative;
     bottom: 150px;
-
+    height: 40px;
 
 }
 
@@ -93,6 +116,8 @@ ul li a:hover{
     color:#2e2e2e;
     background-color: white;
     border-color: #2e2e2e;
+    font-size: 20px;
+    
 
 }
 
@@ -112,30 +137,30 @@ ul li a:hover{
 .tarjetas{
     border: 2px solid black;
     width: 180px;
-    height: 260px;
+    height: 300px;
     padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
+
 }
 
-.btn{
+.botn{
     color: white;
-    border: 3px solid black;
+    border: 3px solid rgb(0, 0, 0);
     background-color: black;
     border-radius: 40px;
     padding: 1px 15px;
 }
 
-.btn:hover{
-    border: 3px solid black;
+.botn:hover{
     background-color: white;
     color: black;
 }
 
-.slider{
+.slider1{
     display: flex;
     gap: 3px;
     justify-content: center;
@@ -155,16 +180,24 @@ footer{
     align-items: center;
 }
 
-ul{
+.contenido__footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.iconos__footer{
     display: flex;
     justify-content: space-between;
     margin: 0 40px;
 
 }
 
-ul li{
+.iconos__footer li{
     margin: 0 30px;
 }
+
 
 /* --------- Productos ------------ */
 
@@ -172,8 +205,10 @@ ul li{
 .portada__pag{
     color: rgb(255, 255, 255);
     font-size: 60px;
+    border-radius: 0px 0px 15px 15px ;
     text-shadow: 0.1em 0.1em rgb(83, 97, 100);
     font-weight: 500;
+    box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.75);
     background-color: rgb(83, 136, 149) ;
     padding: 30px;
     margin: 0 500px;
@@ -201,10 +236,21 @@ ul li{
 }
 
 .productos__catalogo{
-    padding: 10px 500px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    padding: 10px 530px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+.productos__catalogo__nin{
+    padding: 50px 530px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
 }
 
 .tarjetas__productos{
@@ -212,6 +258,7 @@ ul li{
     border-radius: 10px;
     background-color: #999999;
     width: 250px;
+    text-align: center;
     height: 400px;
     padding: 5px;
     display: flex;
@@ -219,6 +266,7 @@ ul li{
     justify-content: space-between;
     align-items: center;
 }
+
 
 
 
@@ -240,8 +288,38 @@ ul li{
     padding: 70px 160px;
     display: flex;
     flex-direction: column;
-    margin: 200px 600px; 
+    margin: 100px 550px; 
 }
+
+.botn__contacto{
+    color: #696969;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 17px;
+    padding: 5px 9px;
+    margin-left: 297px;
+}
+
+.botn__contacto:hover{
+    color: white ;
+    background-color: #696969;
+}
+
+.form__inputs{
+    padding: 10px;
+}
+
+.form__inputs input, textarea{
+    padding: 20px;
+    border-radius: 13px;
+    border: #bdbdbd;
+    width: 360px;
+}
+
+.form__inputs textarea{
+    height: 190px;
+}
+
 
 /* ----------------- NOSOTROS -------------- */
 
@@ -270,7 +348,245 @@ ul li{
     align-items: center;
 }
 
-/* ---------- NIÑOS ----------- */
+/* ---------- SECCION RESPONSIVE ------------- */
+
+/* ----------- INDEX ---------------- */
+
+@media(max-width:480px){
+    header{
+        background-color: #2e2e2e;
+        color: white;
+        width: 100%;
+        display: flex;
+        height: 166px;
+        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo__pagina{
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        letter-spacing: 20px;
+        font-size: 60px;
+    }
+    
+    .logo__pagina a{
+        color: white;
+    }
+    
+    
+    .secciones__paginas{ 
+        font-size: 20px;
+        padding-right: 20px;
+        gap: 20px;
+    }
+    
+    header nav{
+        width: 100%;
+        font-size: 10px;
+    }
+    
+    
+    ul li a:hover{
+        color: rgb(129, 129, 129);
+    
+    }
+    
+    /* Main */
+    
+    .portadabott{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .botonesportada{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0px 10px;
+        position: relative;
+        bottom: 150px;
+    
+    
+    }
+    
+    .boton__portada{
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 1px 15px;
+        border-radius: 40px;
+        background-color: #2e2e2e;
+        border-color: white;
+        transition: 0.3s;
+    
+    }
+    
+    .boton__portada:hover{
+        color:#2e2e2e;
+        background-color: white;
+        border-color: #2e2e2e;
+    
+    }
+    
+    .ofertas__titulo{
+        text-align: center;
+        padding: 25px;
+        font-size: 40px;
+        color: #000000;
+    }
+    
+    .preciotach{
+        font-size: 13px;
+    }
+    
+    .tarjetas{
+        border: 2px solid black;
+        width: 180px;
+        height: 300px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    .botn{
+        color: white;
+        border: 3px solid rgb(0, 0, 0);
+        background-color: black;
+        border-radius: 40px;
+        padding: 1px 15px;
+    }
+    
+    .botn:hover{
+        background-color: white;
+        color: black;
+    }
+    
+    .slider1{
+        display: flex;
+        justify-content: flex-start;
+        gap: 3px;
+        margin-bottom: 30px;
+        overflow: auto;
+        
+    
+} 
+
+/* ------------ footer ------------- */
+
+.contenido__footer{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
 
 
 
+
+/* ----------- NOSOTROS ----------- */
+
+.portada__pag{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-shadow: 0.1em 0.1em rgb(83, 97, 100);
+    font-weight: 500;
+    background-color: rgb(83, 136, 149) ;
+    padding: 30px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.nosotros__cuadro{
+    border: 4px solid black;
+    background-color: #bdbdbd;
+    border-radius: 10px;
+    padding: 30px;
+    width: 450px;
+    height: 500px;
+    display: flex;
+
+}
+
+
+.googlemaps{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    width: 453px;
+    height: 460px;
+}
+
+.contenidonosotros{
+    width: 100%;
+    height: 100%;
+    padding: 92px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+/* ---------------- CONTACTO -------------- */
+
+.contacto{
+    background-image: url(../assets/Img/contactofondo.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 170% 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cuadro__form{
+    border: 2px solid rgb(174, 174, 174);
+    background-color: rgb(174, 174, 174);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    width: 460px;
+    height: 600px;
+    flex-direction: column;
+    margin: 50px 0px; 
+
+
+}
+
+.form__inputs{
+    padding: 10px;
+}
+
+.form__inputs input, textarea{
+    padding: 20px;
+    border-radius: 13px;
+    border: #bdbdbd;
+    width: 360px;
+}
+
+.form__inputs textarea{
+    height: 190px;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
