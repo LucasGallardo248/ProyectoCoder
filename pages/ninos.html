@@ -13,24 +13,46 @@
 
 <body>
     <header>
-        <h1 class="logo__pagina"><a href="../index.html">UVHAA</a></h1>
-        <nav>
-            <ul class="secciones__paginas">
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./ninos.html">Niños</a></li>
-                <li><a href="./ninas.html">Niñas</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg  navpag">
+            <div class="container-fluid">
+                
+                    <a class="navbar-brand logo__pagina "href="../index.html">UVHAA</a>
+                    <button class="navbar-toggler hamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link "   href="../pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"  href="./ninos.html">Niños</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/ninas.html">Niñas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link "href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
     </header>
 
     <main>
         <section class="productospag" data-aos="zoom-in">
-            <h2 class="portada__pag">NIÑOS</h2>
+            <div class="portada__pag">
+            <h2>NIÑOS</h2>
+        </div>
         </section>
-        <section>
+        <section class="seccion__productos">
             <div class="productos__catalogo__nin" data-aos="fade-up">
                 <article class="tarjetas__productos">
                     <h4 class="tarjeta__tittle">Campera Inflable</h4>

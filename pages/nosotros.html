@@ -13,15 +13,35 @@
 
 <body>
     <header>
-        <h1 class="logo__pagina"><a href="../index.html">UVHAA</a></h1>
-        <nav>
-            <ul class="secciones__paginas">
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./ninos.html">Niños</a></li>
-                <li><a href="./ninas.html">Niñas</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg  navpag">
+            <div class="container-fluid">
+                
+                    <a class="navbar-brand logo__pagina "href="../index.html">UVHAA</a>
+                    <button class="navbar-toggler hamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link"   href="../pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/ninos.html">Niños</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/ninas.html">Niñas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"  href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link "href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
     </header>
@@ -29,7 +49,9 @@
     <main>
         <div>
             <section class="portadanosotros" data-aos="zoom-in">
-                <h2 class="portada__pag">SOBRE NOSOTROS</h2>
+                <div class="portada__pag">
+                    <h2>SOBRE NOSOTROS</h2>
+                </div>
             </section>
             <section class="contenidonosotros">
                 <div class="nosotros__cuadro" data-aos="fade-down-right">
@@ -44,7 +66,7 @@
                         harum.
                     </h2>
                 </div>
-                <div class="googlemaps" data-aos="fade-down-left">
+                <div class="googlemaps" data-aos="fade-down-right">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d434.422315636167!2d-66.85587471432588!3d-29.4177313212396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427dbccfce09929%3A0x5303fbbd00d63d42!2sUvhaa%20La%20Rioja!5e0!3m2!1sen!2sar!4v1662950008829!5m2!1sen!2sar"
                         width="600" height="458" style="border:0;" allowfullscreen="" loading="lazy"
