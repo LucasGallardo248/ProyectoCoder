@@ -1,671 +1,387 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-/* ----------------- index.html --------------------*/
+main {
+  background: rgb(190, 187, 187);
+  background: linear-gradient(34deg, rgb(190, 187, 187) 0%, rgb(255, 255, 255) 100%);
+}
 
-/* Header */
-
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .navpag {
-    background-color: #2e2e2e;
-    color: white;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
+  background-color: #2e2e2e;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .nav-link {
-    color: white;
+  color: white;
+}
+.nav-link:focus, .nav-link:hover {
+  color: white;
 }
 
 .navbar-nav .nav-link.active,
-.navbar-nav .show>.nav-link {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
+.navbar-nav .show > .nav-link {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
 }
 
-.nav-link:focus,
-.nav-link:hover {
-    color: white;
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  background-color: #2e2e2e;
 }
-
-.navbar>.container,
-.navbar>.container-fluid,
-.navbar>.container-lg,
-.navbar>.container-md,
-.navbar>.container-sm,
-.navbar>.container-xl,
-.navbar>.container-xxl {
-    background-color: #2e2e2e;
-}
-
-
-
 
 .logo__pagina {
-    color: white;
-    font-weight: bold;
-    letter-spacing: 20px;
-    padding-left: 90px;
-    transition: 0.8s;
-
+  color: white;
+  font-weight: bold;
+  letter-spacing: 20px;
+  padding-left: 90px;
+  transition: 0.8s;
 }
-
-.logo__pagina a:hover {
-    color: rgb(129, 129, 129);
-    font-size: 46px;
-    transition: all 0.5s;
-}
-
 .logo__pagina a {
-    color: white;
+  color: white;
 }
-
-
-header ul {
-    display: flex;
-    justify-content: space-around;
-
+.logo__pagina a:hover {
+  color: rgb(129, 129, 129);
+  font-size: 46px;
+  transition: all 0.5s;
 }
 
 header nav {
-    width: 50%;
-    font-size: 25px;
-}
-
-ul li a {
-    color: white;
-    transition: 0.5s;
-
+  width: 50%;
+  font-size: 25px;
 }
 
 ul li a:hover {
-    color: rgb(129, 129, 129);
-    font-size: 30px;
-
-
-
+  color: rgb(129, 129, 129);
+  font-size: 30px;
+  transition: 0.5s;
 }
 
-
-
-/* Main */
-
-main {
-    background: rgb(190,187,187);
-    background: linear-gradient(34deg, rgba(190,187,187,1) 0%, rgba(255,255,255,1) 100%);
-}
-
-
-.portadabott {
-    display: flex;
-    justify-content: space-around;
-    height: 500px;
-
-}
-
-.portadabott img{
-    border-radius: 0 0 30px 30px;
-    box-shadow: 0px 11px 17px -4px rgba(0,0,0,0.75);
-}
-
-.botonesportada {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0 100px;
-    position: relative;
-    bottom: 150px;
-    height: 40px;
-
-}
-
-.boton__portada {
-    color: white;
-    font-size: 17px;
-    font-weight: 500;
-    padding: 1px 15px;
-    border-radius: 40px;
-    background-color: #2e2e2e;
-    border-color: white;
-    transition: 0.3s;
-
-}
-
-.boton__portada:hover {
-    color: #2e2e2e;
-    background-color: white;
-    border-color: #2e2e2e;
-    font-size: 20px;
-
-
-}
-
-.ofertas__titulo {
-    text-align: center;
-    padding: 25px;
+@media (max-width: 480px) {
+  .logo__pagina {
     font-size: 40px;
-    color: #000000;
+  }
+}
+.footer {
+  background-color: #2e2e2e;
+  color: white;
+  display: flex;
+  padding: 10px;
+  font-size: 14px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__contenido {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.footer__iconos {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__iconos li {
+  margin: 0 30px;
 }
 
-.preciotach {
-    font-size: 13px;
-}
-
-
-
-.tarjetas {
-    border: 2px solid black;
-    background-color: white;
-    width: 180px;
-    height: 300px;
-    padding: 5px;
+@media (max-width: 480px) {
+  .footer__contenido {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
     align-items: center;
+    gap: 30px;
+  }
+}
+.cuadro__form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 2px solid rgb(174, 174, 174);
+  background-color: rgb(174, 174, 174);
+  border-radius: 20px;
+  width: 600px;
+  height: auto;
+}
+.cuadro__form__inputs {
+  padding: 10px;
+}
+.cuadro__form__inputs input,
+.cuadro__form__inputs textarea {
+  padding: 20px;
+  border-radius: 13px;
+  border: #bdbdbd;
+  width: 80%;
+}
+.cuadro__form__inputs textarea {
+  height: 190px;
+}
 
-
+@media (max-width: 480px) {
+  .cuadro__form {
+    width: 100%;
+  }
+}
+.portada__boton {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 1px 15px;
+  border-radius: 40px;
+  background-color: #2e2e2e;
+  border-color: white;
+  transition: 0.3s;
+}
+.portada__boton:hover {
+  color: #2e2e2e;
+  background-color: white;
+  border-color: #2e2e2e;
+  font-size: 20px;
 }
 
 .botn {
-    color: white;
-    border: 3px solid rgb(0, 0, 0);
-    background-color: black;
-    border-radius: 40px;
-    padding: 1px 15px;
+  color: white;
+  border: 3px solid rgb(0, 0, 0);
+  background-color: black;
+  border-radius: 40px;
+  padding: 1px 15px;
 }
-
 .botn:hover {
-    background-color: white;
-    color: black;
-}
-
-.slider1 {
-    display: flex;
-    gap: 3px;
-    justify-content: center;
-    padding-bottom: 30px;
-
-}
-
-/* Footer */
-
-footer {
-    background-color: #2e2e2e;
-    color: white;
-    display: flex;
-    padding: 10px;
-    font-size: 14px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.contenido__footer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
-}
-
-.iconos__footer {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 40px;
-
-}
-
-.iconos__footer li {
-    margin: 0 30px;
-}
-
-
-/* --------- Productos ------------ */
-
-
-.productospag {
-    display: flex;
-    justify-content: center;
-
-}
-
-.portada__pag {
-    color: rgb(255, 255, 255);
-    border-radius: 0px 0px 15px 15px;
-    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.75);
-    background-color: rgb(83, 136, 149);
-    padding: 30px;
-    width: 700px;
-    text-align: center;
-}
-
-.portada__pag h2 {
-    font-size: 60px;
-    text-shadow: 0.1em 0.1em rgb(83, 97, 100);
-    font-weight: 500;
-}
-
-.contenedor__cuadro {
-    display: flex;
-    justify-content: center;
-}
-
-.cuadro__h-m {
-    border: 2px solid rgb(131, 191, 205);
-    width: 300px;
-    margin: 35px 0;
-    background-color: rgb(131, 191, 205);
-    border-radius: 10px;
-    padding: 25px;
-    display: flex;
-    justify-content: center;
-}
-
-.prod__tittle {
-    font-weight: 600;
-    font-size: 30px;
-}
-
-.seccion__productos {
-    display: flex;
-    justify-content: center;
-}
-
-
-.productos__catalogo {
-    width: 60%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.productos__catalogo__nin {
-    width: 60%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.tarjetas__productos {
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: #999999;
-    width: 250px;
-    text-align: center;
-    height: 400px;
-    padding: 5px;
-    display: flex;
-    margin: 20px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-
-
-/* ----------------- CONTACTO ------------- */
-
-
-.contactocuadro {
-    width: auto;
-    height: auto;
-}
-
-
-.contacto {
-    background-image: url(../assets/Img/contactofondo.jpg);
-    width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cuadro__form {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    border: 2px solid rgb(174, 174, 174);
-    background-color: rgb(174, 174, 174);
-    border-radius: 20px;
-    width: 600px;
-    height: auto;
+  background-color: white;
+  color: black;
 }
 
 .form__boton {
+  display: flex;
+  justify-content: end;
+}
+.form__boton__contacto {
+  color: #000000;
+  background-color: #696969;
+  border-radius: 15px;
+  font-size: 17px;
+  padding: 5px 17px;
+}
+.form__boton__contacto:hover {
+  color: white;
+}
+
+.ofertas__slider {
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .ofertas__slider {
     display: flex;
-    justify-content: end;
+    justify-content: flex-start;
+    overflow: auto;
+  }
+}
+.ofertas__tarjetas {
+  border: 2px solid black;
+  background-color: white;
+  width: 180px;
+  height: 300px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.ofertas__tarjetas__preciotach {
+  font-size: 13px;
 }
 
-.botn__contacto {
-    color: #000000;
-    background-color: #696969;
-    border-radius: 15px;
-    font-size: 17px;
-    padding: 5px 17px;
+.tarjetas__productos {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #999999;
+  width: 250px;
+  text-align: center;
+  height: 400px;
+  padding: 5px;
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.botn__contacto:hover {
-    color: white;
+.portada__imagen {
+  display: flex;
+  justify-content: space-around;
+  height: 500px;
+  overflow: hidden;
+}
+.portada__imagen img {
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0px 11px 17px -4px rgba(0, 0, 0, 0.75);
+  height: 480px;
 }
 
-.form__inputs {
-    padding: 10px;
+.portada__botones {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 100px;
+  position: relative;
+  bottom: 150px;
+  height: 40px;
 }
 
-.form__inputs input,
-textarea {
-    padding: 20px;
-    border-radius: 13px;
-    border: #bdbdbd;
-    width: 80%;
+.ofertas__titulo {
+  text-align: center;
+  padding: 25px;
+  font-size: 40px;
+  color: #000000;
 }
-
-.form__inputs textarea {
-    height: 190px;
-}
-
-
-/* ----------------- NOSOTROS -------------- */
 
 .portadanosotros {
+  display: flex;
+  justify-content: center;
+}
+
+.contenido__nosotros {
+  padding: 92px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 700px;
+}
+.contenido__nosotros__cuadro {
+  border: 4px solid black;
+  background-color: #bdbdbd;
+  border-radius: 10px;
+  padding: 30px;
+  width: 700px;
+  height: auto;
+  display: flex;
+}
+.contenido__nosotros__googlemaps {
+  border: 1px solid black;
+  width: 602px;
+  height: 460px;
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .portada__pag {
+    margin: 0 20px;
+  }
+  .contenido__nosotros {
+    padding: 20px;
+    gap: 20px;
+  }
+  .contenido__nosotros__googlemaps {
     display: flex;
     justify-content: center;
+    width: 453px;
+  }
+}
+.productospag {
+  display: flex;
+  justify-content: center;
 }
 
-
-.nosotros__cuadro {
-    border: 4px solid black;
-    background-color: #bdbdbd;
-    border-radius: 10px;
-    padding: 30px;
-    width: 700px;
-    height: 500px;
-    display: flex;
-
+.portada__pag {
+  color: rgb(255, 255, 255);
+  border-radius: 0px 0px 15px 15px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.75);
+  background-color: rgb(83, 136, 149);
+  padding: 30px;
+  width: 700px;
+  text-align: center;
+}
+.portada__pag h2 {
+  font-size: 60px;
+  text-shadow: 0.1em 0.1em rgb(83, 97, 100);
+  font-weight: 500;
 }
 
-.googlemaps {
-    border: 1px solid black;
-    width: 602px;
-    height: 460px;
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
+.contenedor__cuadro {
+  border: 2px solid rgb(131, 191, 205);
+  width: 300px;
+  margin: 35px 0;
+  background-color: rgb(131, 191, 205);
+  border-radius: 10px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+}
+.contenedor__cuadro__tittle {
+  font-weight: 600;
+  font-size: 30px;
 }
 
-.contenidonosotros {
-    padding: 92px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+.seccion__productos {
+  display: flex;
+  justify-content: center;
+}
+.seccion__productos__catalogo {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.seccion__productos__catalogo-nin {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* ---------- SECCION RESPONSIVE ------------- */
-
-/* ----------- INDEX ---------------- */
-
-@media(max-width:480px) {
-
-    .logo__pagina {
-        display: flex;
-        justify-content: center;
-        font-weight: bold;
-        letter-spacing: 20px;
-        font-size: 40px;
-    }
-
-    .logo__pagina a {
-        color: white;
-    }
-
-
-    .secciones__paginas {
-        font-size: 20px;
-        padding-right: 20px;
-        gap: 20px;
-    }
-
-    header nav {
-        width: 100%;
-        font-size: 22px;
-    }
-
-
-    ul li a:hover {
-        color: rgb(129, 129, 129);
-
-    }
-
-    /* Main */
-
-    .portadabott {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .botonesportada {
-        display: flex;
-        justify-content: space-evenly;
-        margin: 0px 10px;
-        position: relative;
-        bottom: 150px;
-
-
-    }
-
-    .boton__portada {
-        color: white;
-        font-size: 25px;
-        font-weight: 500;
-        padding: 1px 15px;
-        border-radius: 40px;
-        background-color: #2e2e2e;
-        border-color: white;
-        transition: 0.3s;
-
-    }
-
-    .boton__portada:hover {
-        color: #2e2e2e;
-        background-color: white;
-        border-color: #2e2e2e;
-
-    }
-
-    .ofertas__titulo {
-        text-align: center;
-        padding: 25px;
-        font-size: 40px;
-        color: #000000;
-    }
-
-    .preciotach {
-        font-size: 13px;
-    }
-
-    .tarjetas {
-        border: 2px solid black;
-        width: 180px;
-        height: 300px;
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-
-    }
-
-    .botn {
-        color: white;
-        border: 3px solid rgb(0, 0, 0);
-        background-color: black;
-        border-radius: 40px;
-        padding: 1px 15px;
-    }
-
-    .botn:hover {
-        background-color: white;
-        color: black;
-    }
-
-    .slider1 {
-        display: flex;
-        justify-content: flex-start;
-        gap: 3px;
-        margin-bottom: 30px;
-        overflow: auto;
-
-
-    }
-
-    /* ------------ footer ------------- */
-
-    .contenido__footer {
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 30px;
-    }
-
-
-
-
-    /* ----------- NOSOTROS ----------- */
-
-    .portada__pag {
-        color: rgb(255, 255, 255);
-        font-size: 40px;
-        text-shadow: 0.1em 0.1em rgb(83, 97, 100);
-        font-weight: 500;
-        background-color: rgb(83, 136, 149);
-        padding: 30px;
-        margin: 0 20px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-
-
-
-    .nosotros__cuadro {
-        border: 4px solid black;
-        background-color: #bdbdbd;
-        border-radius: 10px;
-        padding: 30px;
-        width: 450px;
-        height: 500px;
-        display: flex;
-
-    }
-
-
-    .googlemaps {
-        display: flex;
-        justify-content: center;
-        border: 1px solid black;
-        width: 453px;
-        height: 460px;
-    }
-
-    .contenidonosotros {
-        width: 100%;
-        height: 100%;
-        padding: 20px;
-        display: flex;
-        justify-content: space-evenly;
-        gap: 20px;
-    }
-
-    /* ---------------- CONTACTO -------------- */
-
-    .contactocuadro {
-        width: auto;
-        height: auto;
-    }
-    
-    
-    .contacto {
-        background-image: url(../assets/Img/contactofondo.jpg);
-        width: 100%;
-        height: 100vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .cuadro__form {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        margin: 20px 0;
-        border: 2px solid rgb(174, 174, 174);
-        background-color: rgb(174, 174, 174);
-        border-radius: 20px;
-        width: 100%;
-        height: auto;
-    }
-    
-    .form__boton {
-        display: flex;
-        justify-content: end;
-    }
-    
-    .botn__contacto {
-        color: #000000;
-        background-color: #696969;
-        border-radius: 15px;
-        font-size: 17px;
-        padding: 5px 17px;
-    }
-    
-    .botn__contacto:hover {
-        color: white;
-    }
-    
-    .form__inputs {
-        padding: 10px;
-    }
-    
-    .form__inputs input,
-    textarea {
-        padding: 20px;
-        border-radius: 13px;
-        border: #bdbdbd;
-        width: 80%;
-    }
-    
-    .form__inputs textarea {
-        height: 190px;
-    }
-    
-
-
+.contacto {
+  background-image: url(../assets/Img/contactofondo.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.contacto__cuadro {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=styles.css.map */

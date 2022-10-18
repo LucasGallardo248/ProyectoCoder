@@ -1,0 +1,33 @@
+.footer {
+    background-color: #2e2e2e;
+    color: white;
+    display: flex;
+    padding: 10px;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+    &__contenido{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+    &__iconos{
+        display: flex;
+        justify-content: space-between;
+        & li{
+            margin: 0 30px;
+        }
+    }
+}
+
+
+@media(max-width:480px){
+    .footer__contenido {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 30px;
+    }
+}

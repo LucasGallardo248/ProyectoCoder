@@ -1,0 +1,29 @@
+.cuadro__form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid rgb(174, 174, 174);
+    background-color: rgb(174, 174, 174);
+    border-radius: 20px;
+    width: 600px;
+    height: auto;
+    &__inputs{
+        padding: 10px;
+        & input, 
+        textarea{
+            padding: 20px;
+            border-radius: 13px;
+            border: #bdbdbd;
+            width: 80%;
+        }
+        & textarea{
+            height: 190px;
+        }
+    }
+}
+
+@media(max-width:480px){
+    .cuadro__form {
+        width: 100%;
+    }
+}

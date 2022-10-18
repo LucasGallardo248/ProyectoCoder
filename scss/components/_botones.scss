@@ -1,0 +1,44 @@
+.portada__boton {
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 1px 15px;
+    border-radius: 40px;
+    background-color: #2e2e2e;
+    border-color: white;
+    transition: 0.3s;
+
+    &:hover {
+        color: #2e2e2e;
+        background-color: white;
+        border-color: #2e2e2e;
+        font-size: 20px;
+    }
+}
+
+.botn {
+    color: white;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: black;
+    border-radius: 40px;
+    padding: 1px 15px;
+    &:hover{
+        background-color: white;
+        color: black;
+    }
+}
+
+.form__boton{
+    display: flex;
+    justify-content: end;
+    &__contacto{
+        color: #000000;
+        background-color: #696969;
+        border-radius: 15px;
+        font-size: 17px;
+        padding: 5px 17px;
+        &:hover{
+            color: white;
+        }
+    }
+}

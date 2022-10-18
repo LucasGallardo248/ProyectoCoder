@@ -1,0 +1,15 @@
+.ofertas__slider {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+@media(max-width:480px){
+    .ofertas__slider {
+        display: flex;
+        justify-content: flex-start;
+        overflow: auto;
+    }
+}

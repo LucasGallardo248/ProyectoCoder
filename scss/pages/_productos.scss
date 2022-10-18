@@ -1,0 +1,59 @@
+.productospag {
+    display: flex;
+    justify-content: center;
+}
+
+.portada__pag {
+    color: rgb(255, 255, 255);
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.75);
+    background-color: rgb(83, 136, 149);
+    padding: 30px;
+    width: 700px;
+    text-align: center;
+
+    & h2 {
+        font-size: 60px;
+        text-shadow: 0.1em 0.1em rgb(83, 97, 100);
+        font-weight: 500;
+    }
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+
+    &__cuadro {
+        border: 2px solid rgb(131, 191, 205);
+        width: 300px;
+        margin: 35px 0;
+        background-color: rgb(131, 191, 205);
+        border-radius: 10px;
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+        &__tittle{
+            font-weight: 600;
+            font-size: 30px;
+        }
+    }
+}
+
+.seccion__productos {
+    display: flex;
+    justify-content: center;
+    &__catalogo{
+        width: 60%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &-nin{
+            width: 60%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
