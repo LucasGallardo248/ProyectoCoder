@@ -310,6 +310,11 @@ ul li a:hover {
     width: 453px;
   }
 }
+@media (max-width: 1485px) {
+  .contenido__nosotros {
+    height: auto;
+  }
+}
 .productospag {
   display: flex;
   justify-content: center;
