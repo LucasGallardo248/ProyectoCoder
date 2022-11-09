@@ -1,0 +1,23 @@
+.ninos-fondo{
+    width: 100%;
+    height: auto;
+    background-image: url(../../assets/Img/productosninos/ninosfondo.jpg);
+    background-size: cover;
+    background-position-x: right;
+    background-repeat: no-repeat;
+}
+
+.productospag-ninos{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 2px solid rgb(133, 133, 133);
+    padding-bottom: 20px;
+}
+
+
+@media(max-width:725px){
+    .ninos-fondo{
+        background-position-x: -3880px;
+    }
+}

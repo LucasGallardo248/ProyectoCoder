@@ -11,40 +11,46 @@
     align-items: center;
     height: 700px;
     &__cuadro{
-        border: 4px solid black;
-        background-color: #bdbdbd;
-        border-radius: 10px;
+        background-image: url(../../assets/Img/nosotros/fond-nosotros.png);
+        border-radius: 20px;
+        box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
         padding: 30px;
-        width: 700px;
+        width: 100%;
         height: auto;
+        gap: 100px;
         display: flex;
     }
     &__googlemaps{
         border: 1px solid black;
-        width: 602px;
+        background-color: white;
+        border-radius: 20px;
+        width: 50%;
         height: 460px;
         overflow: hidden;
     }
 }
 
-@media(max-width:480px) {
-    .portada__pag {
-        margin: 0 20px;
-    }
-
-    .contenido__nosotros {
-        padding: 20px;
-        gap: 20px;
-        &__googlemaps{
-            display: flex;
-            justify-content: center;
-            width: 453px;
-        }
-    }
-}
 
 @media(max-width:1485px){
     .contenido__nosotros{
         height: auto;
+        width: 100%;
+        &__cuadro{
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        &__googlemaps{
+            width: 600px;
+        }
+    }
+}
+
+@media(max-width:845px){
+    .contenido__nosotros{
+        padding: 92px 20px;
+        &__googlemaps{
+            width: 95%;
+        }
     }
 }

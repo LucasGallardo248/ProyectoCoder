@@ -3,9 +3,11 @@
     color: white;
     width: 100%;
     display: flex;
+    height: 80px;
     justify-content: space-between;
     align-items: center;
 }
+
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -33,11 +35,15 @@
 .navbar>.container-sm,
 .navbar>.container-xl,
 .navbar>.container-xxl {
-    background-color: #2e2e2e;
+    background-color: #2e2e2ef6;
+    position: relative;
+    z-index: 100;
 }
+
 
 .logo__pagina {
     color: white;
+    font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 20px;
     padding-left: 90px;
@@ -54,21 +60,87 @@
     }
 }
 
+
 header nav {
     width: 50%;
     font-size: 25px;
 }
 
 
-ul li a:hover {
-    color: rgb(129, 129, 129);
-    font-size: 30px;
-    transition: 0.5s;
+
+
+.nav-animation {
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
 }
+
+.nav-animation * {
+    box-sizing: border-box;
+}
+
+.nav-animation li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 0.2em;
+    padding: 0;
+}
+
+.nav-animation a {
+    padding: 0.5em 0;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.nav-animation a:before,
+.nav-animation a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.nav-animation a:before {
+    bottom: 0;
+    display: block;
+    height: 3px;
+    width: 0%;
+    content: "";
+    background-color: #ffffff;
+}
+
+.nav-animation a:after {
+    left: 0;
+    top: 0;
+    padding: 0.5em 0;
+    position: absolute;
+    content: attr(data-hover);
+    color: #ffffff;
+    white-space: nowrap;
+    max-width: 0%;
+    overflow: hidden;
+}
+
+.nav-animation a:hover:before,
+.nav-animation .current a:before {
+    opacity: 1;
+    width: 100%;
+}
+
+.nav-animation a:hover:after,
+.nav-animation .current a:after {
+    max-width: 100%;
+}
+
+
 
 
 @media(max-width:480px) {
     .logo__pagina {
-        font-size: 40px;
+        font-size: 30px;
+        padding-left: 70px;
     }
 }

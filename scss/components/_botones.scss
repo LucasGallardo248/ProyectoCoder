@@ -1,37 +1,38 @@
 .portada__boton {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 17px;
     font-weight: 500;
-    padding: 1px 15px;
-    border-radius: 40px;
-    background-color: #2e2e2e;
-    border-color: white;
+    padding: 2px 15px;
+    border-radius: 12px;
+    background-color: #bbd3d6;
+    border-color: rgb(0, 0, 0);
     transition: 0.3s;
-
     &:hover {
-        color: #2e2e2e;
-        background-color: white;
-        border-color: #2e2e2e;
-        font-size: 20px;
+        color: #ffffff;
+        background-color: rgb(54, 76, 77);
+        border-color: #000000;
     }
 }
 
 .botn {
-    color: white;
-    border: 3px solid rgb(0, 0, 0);
-    background-color: black;
-    border-radius: 40px;
+    width: 97.73px;
+    height: 32px;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
     padding: 1px 15px;
     &:hover{
-        background-color: white;
-        color: black;
+        background-color: rgb(131, 191, 205);
+        color: #000000;
     }
 }
 
 .form__boton{
     display: flex;
-    justify-content: end;
+    justify-content: center;
     &__contacto{
+        border: 1px solid rgb(73, 73, 73);
         color: #000000;
         background-color: #696969;
         border-radius: 15px;

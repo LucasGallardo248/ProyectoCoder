@@ -1,0 +1,25 @@
+.ninas-fondo{
+    background-image: url(../../assets/Img/productosninas/ninas-fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.productospag-ninas {
+    display: flex;
+    justify-content: center;
+    background: rgb(169,207,200);
+    background: linear-gradient(90deg, rgba(169,207,200,1) 0%, rgba(177,208,204,1) 11%, rgba(177,208,204,1) 49%, rgba(159,190,186,1) 83%, rgba(154,185,181,1) 100%);
+    border-bottom: 2px solid rgb(28, 160, 160);
+    padding-bottom: 20px;
+}
+
+
+@media(max-width:966px){
+    .ninas-fondo{
+        
+    }
+
+}

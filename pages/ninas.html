@@ -8,7 +8,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Proyecto Coder Lucas Gallardo</title>
+    <title>Niñas | UVHAA LR</title>
+    <link rel="icon" type="icon" href="../assets/Img/icontittle.png">
 </head>
 
 <body>
@@ -16,27 +17,27 @@
         <nav class="navbar navbar-expand-lg  navpag">
             <div class="container-fluid">
                 
-                    <a class="navbar-brand logo__pagina "href="../index.html">UVHAA</a>
-                    <button class="navbar-toggler hamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    <a class="navbar-brand logo__pagina active"  aria-current="page"  href="../index.html">UVHAA</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link"   href="../pages/productos.html">Productos</a>
+                    <ul class="navbar-nav ms-auto nav-animation">
+                        <li class="nav-item pe-4">
+                            <a class="nav-link" href="../pages/productos.html">Productos</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item pe-4">
                             <a class="nav-link" href="../pages/ninos.html">Niños</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"  href="./ninas.html">Niñas</a>
+                        <li class="nav-item pe-4 current">
+                            <a class="nav-link" href="../pages/ninas.html">Niñas</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item pe-4">
                             <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item pe-4">
                             <a class="nav-link "href="../pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
@@ -44,52 +45,173 @@
             </div>
         </nav>
 
+
     </header>
 
     <main>
         <div>
-            <section class="productospag" data-aos="zoom-in">
-                <div class="portada__pag">
+            <section class="productospag-ninas">
+                <div class="portada__pag" data-aos="zoom-in">
                     <h2>NIÑAS</h2>
                 </div>
             </section>
-            <section class="seccion__productos">
+            <section class="seccion__productos pt-5 pb-5 w-100 ninas-fondo">
                 <div class="seccion__productos__catalogo-nin" data-aos="fade-up">
                     <article class="tarjetas__productos">
-                        <h4 class="tarjeta__tittle">Buzo</h4>
-                        <img src="../assets/Img/productosninas/img1.png" alt="">
-                        <p class="tarjeta__precio">$2.599</p>
-                        <a href="" class="botn">Comprar</a>
+                        <div class="titulo-drop">
+                            <h4 class="tarjeta__tittle">Buzo</h4>
+                            <div class="btn-group">
+                                <button type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split rounded-2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <div class="drop-talles d-flex  justify-content-around pointer-event">
+                                        <li><button>S</button></li>
+                                        <li><button>M</button></li>
+                                        <li><button>L</button></li>
+                                        <li><button>XL</button></li>
+                                        <li><button>XXL</button></li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="../assets/Img/productosninas/img1.png" alt="Buzo niña">
+                        <div class="precio-compra">
+                            <p>$2.566</p>
+                            <a href="" class="botn">Comprar</a>
+                        </div>
                     </article>
                     <article class="tarjetas__productos">
-                        <h4 class="tarjeta__tittle">Pollera</h4>
-                        <img src="../assets/Img/productosninas/img2.png" alt="">
-                        <p class="tarjeta__precio">$2.599</p>
-                        <a href="" class="botn">Comprar</a>
+                        <div class="titulo-drop">
+                            <h4 class="tarjeta__tittle">Pollera</h4>
+                            <div class="btn-group">
+                                <button type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split rounded-2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <div class="drop-talles d-flex  justify-content-around pointer-event">
+                                        <li><button>S</button></li>
+                                        <li><button>M</button></li>
+                                        <li><button>L</button></li>
+                                        <li><button>XL</button></li>
+                                        <li><button>XXL</button></li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="../assets/Img/productosninas/img2.png" alt="Pollera niña">
+                        <div class="precio-compra">
+                            <p>$2.566</p>
+                            <a href="" class="botn">Comprar</a>
+                        </div>
                     </article>
                     <article class="tarjetas__productos">
-                        <h4 class="tarjeta__tittle">Vestido</h4>
-                        <img src="../assets/Img/productosninas/img3.png" alt="">
-                        <p class="tarjeta__precio">$2.599</p>
-                        <a href="" class="botn">Comprar</a>
+                        <div class="titulo-drop">
+                            <h4 class="tarjeta__tittle">Vestido</h4>
+                            <div class="btn-group">
+                                <button type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split rounded-2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <div class="drop-talles d-flex  justify-content-around pointer-event">
+                                        <li><button>S</button></li>
+                                        <li><button>M</button></li>
+                                        <li><button>L</button></li>
+                                        <li><button>XL</button></li>
+                                        <li><button>XXL</button></li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="../assets/Img/productosninas/img3.png" alt="Vestido niña">
+                        <div class="precio-compra">
+                            <p>$2.566</p>
+                            <a href="" class="botn">Comprar</a>
+                        </div>
                     </article>
                     <article class="tarjetas__productos">
-                        <h4 class="tarjeta__tittle">Pantalon Jean</h4>
-                        <img src="../assets/Img/productosninas/img4.png" alt="">
-                        <p class="tarjeta__precio">$2.599</p>
-                        <a href="" class="botn">Comprar</a>
+                        <div class="titulo-drop">
+                            <h4 class="tarjeta__tittle">Pantalon Jean</h4>
+                            <div class="btn-group">
+                                <button type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split rounded-2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <div class="drop-talles d-flex  justify-content-around pointer-event">
+                                        <li><button>S</button></li>
+                                        <li><button>M</button></li>
+                                        <li><button>L</button></li>
+                                        <li><button>XL</button></li>
+                                        <li><button>XXL</button></li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="../assets/Img/productosninas/img4.png" alt="Pantalon jean niña">
+                        <div class="precio-compra">
+                            <p>$2.566</p>
+                            <a href="" class="botn">Comprar</a>
+                        </div>
                     </article>
                     <article class="tarjetas__productos">
-                        <h4 class="tarjeta__tittle">Pantalon Sport</h4>
-                        <img src="../assets/Img/productosninas/img5.png" alt="">
-                        <p class="tarjeta__precio">$2.599</p>
-                        <a href="" class="botn">Comprar</a>
+                        <div class="titulo-drop">
+                            <h4 class="tarjeta__tittle">Pantalon Sport</h4>
+                            <div class="btn-group">
+                                <button type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split rounded-2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <div class="drop-talles d-flex  justify-content-around pointer-event">
+                                        <li><button>S</button></li>
+                                        <li><button>M</button></li>
+                                        <li><button>L</button></li>
+                                        <li><button>XL</button></li>
+                                        <li><button>XXL</button></li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="../assets/Img/productosninas/img5.png" alt="Pantalon sport niña">
+                        <div class="precio-compra">
+                            <p>$2.566</p>
+                            <a href="" class="botn">Comprar</a>
+                        </div>
                     </article>
                     <article class="tarjetas__productos">
-                        <h4 class="tarjeta__tittle">Campera Adidas</h4>
-                        <img src="../assets/Img/productosninas/img6.png" alt="">
-                        <p class="tarjeta__precio">$2.599</p>
-                        <a href="" class="botn">Comprar</a>
+                        <div class="titulo-drop">
+                            <h4 class="tarjeta__tittle">Campera Adidas</h4>
+                            <div class="btn-group">
+                                <button type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split rounded-2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <div class="drop-talles d-flex  justify-content-around pointer-event">
+                                        <li><button>S</button></li>
+                                        <li><button>M</button></li>
+                                        <li><button>L</button></li>
+                                        <li><button>XL</button></li>
+                                        <li><button>XXL</button></li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="../assets/Img/productosninas/img6.png" alt="Campera adidas niña">
+                        <div class="precio-compra">
+                            <p>$2.566</p>
+                            <a href="" class="botn">Comprar</a>
+                        </div>
                     </article>
                 </div>
             </section>
@@ -106,18 +228,18 @@
                 <ul class="footer__iconos">
                     <li class="icono__instagram">
                         <a href="https://www.instagram.com/" target="_blank"> <img
-                                src="../assets/Img/instagramfooter.png" alt=""> </a>
+                                src="../assets/Img/instagramfooter.png" alt="Instagram"> </a>
                     </li>
                     <li class="icono__facebook">
                         <a href="https://www.facebook.com/" target="_blank"><img src="../assets/Img/facebook.png"
-                                alt=""></a>
+                                alt="Facebook"></a>
                     </li>
                     <li class="icono__gmail">
-                        <a href="https://www.gmail.com/" target="blank"><img src="../assets/Img/gmail.png" alt=""></a>
+                        <a href="https://www.gmail.com/" target="blank"><img src="../assets/Img/gmail.png" alt="Gmail"></a>
                     </li>
                     <li class="icono__twitter">
                         <a href="https://www.twitter.com/" target="blank"><img src="../assets/Img/twitter.png"
-                                alt=""></a>
+                                alt="Twitter"></a>
                     </li>
                 </ul>
             </div>
